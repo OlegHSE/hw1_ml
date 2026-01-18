@@ -7,7 +7,7 @@ import pickle
 
 st.title("Домашняя работа 1")
 
-df_train = pd.read_csv("df_train_final.csv")
+df_train = pd.read_csv("data/df_train_final.csv")
 num_cols = df_train.select_dtypes(["int", "float"]).columns
 
 st.header("Визуализация обучающего набора данных")

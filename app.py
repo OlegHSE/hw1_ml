@@ -8,9 +8,9 @@ from pathlib import Path
 
 st.title("Домашняя работа 1")
 
-MODEL_PATH = Path(__file__).resolve().parent / "ridge_pipeline.pkl"
-DATA_DIR = Path(__file__).resolve().parent / "data"
-DF_TRAIN_PATH = DATA_DIR / "X_train_cat.csv"
+MODEL_DIR = Path(__file__).resolve().parent / "MODEL"
+MODEL_PATH = MODEL_DIR / "ridge_pipeline.pkl"
+DF_TRAIN_PATH = MODEL_DIR / "X_train_cat.csv"
 
 @st.cache_resource
 def load_model():

@@ -8,7 +8,7 @@ from pathlib import Path
 
 st.title("Домашняя работа 1")
 
-MODEL_DIR = Path(__file__).resolve().parent / "MODEL"
+MODEL_DIR = Path(__file__).resolve().parent / "models"
 MODEL_PATH = MODEL_DIR / "ridge_pipeline.pkl"
 DF_TRAIN_PATH = MODEL_DIR / "X_train_cat.csv"
 
